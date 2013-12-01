@@ -1,0 +1,48 @@
+[core]
+  editor = vim
+	excludesfile = /Users/damir/.gitignore
+[http]
+    sslKey = /Users/damirzekic/.ssh/github
+[user]
+	name = Damir Zekic
+    email = damirz@gmail.com
+[apply]
+    whitespace = nowarn
+[status]
+    color = true
+[alias]
+    b = branch
+    ba = branch -a
+    co = checkout
+    ci = commit
+    cp = cherry-pick
+    rb = rebase
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase -i
+    rbs = rebase --skip
+    st = status -sb
+    ls = status -sb
+    #p = pull --rebase
+    d = diff --patience --word-diff=color --ignore-space-change
+    dc = diff --patience --word-diff=color --ignore-space-change --cached
+    recent = for-each-ref --count=6 --sort=-committerdate refs/heads/ --format='%(refname)'
+
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
+
+    ours = "!f() { git co --ours $@ && git add $@; }; f"
+    theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+
+[color]
+    ui = true
+[svn]
+    rmdir = true
+[heroku]
+	account = personal
+[push]
+	default = simple
