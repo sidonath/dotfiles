@@ -1,0 +1,6 @@
+[submodule "vim/bundle/abolish"]
+	path = vim/bundle/abolish
+	url = git@github.com:tpope/vim-abolish.git
+[submodule "vim/bundle/pathogen"]
+	path = vim/bundle/pathogen
+	url = git@github.com:tpope/vim-pathogen.git
