@@ -6,10 +6,12 @@
 
 Vim plugins are added as submodules and are loaded with pathogen.
 
-#### [abolish.vim](https://github.com/tpope/vim-abolish)
+* [abolish.vim](https://github.com/tpope/vim-abolish)
 
-Used for handy coercion tools:
+  Used for handy coercion tools (`crc`, `crs` etc.)
 
-> Want to turn fooBar into foo_bar? Press crs (coerce to snake_case). MixedCase (crm), camelCase (crc), snake_case (crs), and UPPER_CASE (cru) are all just 3 keystrokes away. These commands support repeat.vim.
+* [nerdtree](https://github.com/scrooloose/nerdtree)
 
+* [NERDTreeTabs](https://github.com/jistr/vim-nerdtree-tabs)
 
+* [ctrlp](https://github.com/kien/ctrlp.vim)
