@@ -10,8 +10,17 @@ Vim plugins are added as submodules and are loaded with pathogen.
 
   Used for handy coercion tools (`crc`, `crs` etc.)
 
-* [nerdtree](https://github.com/scrooloose/nerdtree)
-
+* [NERDTree](https://github.com/scrooloose/nerdtree)
 * [NERDTreeTabs](https://github.com/jistr/vim-nerdtree-tabs)
-
 * [ctrlp](https://github.com/kien/ctrlp.vim)
+* [TComment](https://github.com/tomtom/tcomment_vim)
+* [eunuch.vim](https://github.com/tpope/vim-eunuch)
+* [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+
+Languages:
+
+* [CoffeeScript](https://github.com/kchmck/vim-coffee-script)
+* [vim-ruby](https://github.com/vim-ruby/vim-ruby)
+* [vim-rails](https://github.com/tpope/vim-rails)
+* [vim-haml](https://github.com/chriseppstein/vim-haml)
+* [vim-javascript](https://github.com/pangloss/vim-javascript)
