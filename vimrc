@@ -1,5 +1,5 @@
-# Setup pathogen (installed as a submodule)
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+" Setup pathogen (installed as a submodule)
+runtime bundle/pathogen/autoload/pathogen.vim
 
-# Initialize pathogen
+" Initialize pathogen
 execute pathogen#infect()
