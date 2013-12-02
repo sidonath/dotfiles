@@ -24,3 +24,7 @@ Languages:
 * [vim-rails](https://github.com/tpope/vim-rails)
 * [vim-haml](https://github.com/chriseppstein/vim-haml)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
+
+Colors:
+
+* [Solarized](https://github.com/altercation/vim-colors-solarized)
