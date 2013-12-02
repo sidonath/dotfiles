@@ -37,3 +37,6 @@
 [submodule "vim/bundle/javascript"]
 	path = vim/bundle/javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git@github.com:sidonath/oh-my-zsh.git
