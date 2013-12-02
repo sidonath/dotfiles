@@ -46,3 +46,6 @@
 [submodule "vim/bundle/camel-case-motion"]
 	path = vim/bundle/camel-case-motion
 	url = git@github.com:bkad/CamelCaseMotion.git
+[submodule "vim/bundle/endwise"]
+	path = vim/bundle/endwise
+	url = https://github.com/tpope/vim-endwise.git

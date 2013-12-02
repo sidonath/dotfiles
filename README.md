@@ -17,6 +17,7 @@ Vim plugins are added as submodules and are loaded with pathogen.
 * [eunuch.vim](https://github.com/tpope/vim-eunuch)
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 * [CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
+* [endwise.vim](https://github.com/tpope/vim-endwise)
 
 Languages:
 
