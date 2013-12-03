@@ -45,3 +45,6 @@ nmap <CR> o <Esc>
 nmap <A-Enter> O <Esc>
 
 command LastMigration tabe `=system('find db/migrate | tail -n 1')`
+
+" Use system clipboard for y/p
+set clipboard=unnamed
