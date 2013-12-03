@@ -20,7 +20,7 @@ colorscheme solarized
 set guifont=Menlo:h13
 
 " Show NERDTreeTabs by default for console Vim
-let g:nerdtree_tabs_open_on_console_startup = 1
+" let g:nerdtree_tabs_open_on_console_startup = 1
 
 "##############################################################################
 " Easier split navigation
