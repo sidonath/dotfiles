@@ -67,3 +67,22 @@ export LC_CTYPE=en_US.UTF-8
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Use Zsh/ZLE in vi-mode
+bindkey -v
+bindkey '^R' history-incremental-pattern-search-backward
+export KEYTIMEOUT=1 # how long to wait after pressing modifier key (e.g. ESC)
+
+INSERT_MODE_PROMPT="%{$fg_bold[yellow]%}-- INSERT --%{$reset_color%}"
+RPS1=$INSERT_MODE_PROMPT
+
+### Report ZLE/vi mode in prompt
+# http://dougblack.io/words/zsh-vi-mode.html
+function zle-line-init zle-keymap-select {
+  VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]% %{$reset_color%}"
+  RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/$INSERT_MODE_PROMPT} $EPS1"
+  zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select

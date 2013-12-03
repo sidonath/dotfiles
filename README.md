@@ -1,5 +1,11 @@
 # dotfiles
 
+## Zsh
+
+Uses oh-my-zsh, but I'm looking to get rid of it.
+
+Zsh is running in vi mode and displays current mode (instert/normal) in the right prompt.
+
 ## Vim
 
 ### Plugins
