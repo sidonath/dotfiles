@@ -35,10 +35,6 @@ nmap <silent> <c-l> :wincmd l<CR>
 " Remove scrollbar
 set guioptions=egm
 
-" Restore session on vim restart
-:let g:session_autosave = 'yes'
-:let g:session_autoload = 'yes'
-
 " Configure tab key
 set smartindent
 set tabstop=2
