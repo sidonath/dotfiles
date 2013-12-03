@@ -25,6 +25,7 @@ Vim plugins are added as submodules and are loaded with pathogen.
 * [CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
 * [endwise.vim](https://github.com/tpope/vim-endwise)
 * [surround.vim](https://github.com/tpope/vim-surround)
+* [Vim Tmux Navigator](https://github.com/christoomey/vim-tmux-navigator)
 
 Languages:
 
