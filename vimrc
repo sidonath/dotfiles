@@ -9,7 +9,14 @@ syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
-set number
+set number            " Display line numbers
+set backspace=2       " Make backspace work like most other apps
+
+" Configure tab key
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Light solarized theme
 set background=light
@@ -24,12 +31,6 @@ set guifont=Menlo:h13
 
 " Remove scrollbar
 set guioptions=egm
-
-" Configure tab key
-set smartindent
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
 " autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre * :%s/\s\+$//e " for all files, can get dirty especially with Markdown
