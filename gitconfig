@@ -2,7 +2,7 @@
   editor = vim
 	excludesfile = /Users/damir/.gitignore
 [http]
-    sslKey = /Users/damirzekic/.ssh/github
+    sslKey = /Users/damir/.ssh/github
 [user]
 	name = Damir Zekic
     email = damirz@gmail.com
