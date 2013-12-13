@@ -49,3 +49,6 @@ command LastMigration tabe `=system('find db/migrate | tail -n 1')`
 
 " Use system clipboard for y/p
 set clipboard=unnamed
+
+" The following disables cursor keys, but now we have insta-Esc
+set timeout timeoutlen=3000 ttimeoutlen=100
