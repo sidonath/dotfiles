@@ -43,6 +43,8 @@ alias fs="foreman start"
 alias fr="foreman run"
 #alias zeus="~/.rbenv/shims/foreman run zeus"
 alias gff="git flow feature"
+alias gfh="git flow hotfix"
+alias gfr="git flow release"
 alias tardis="git rbi master"
 
 alias enslower="sudo ipfw add pipe 1 all from any to localhost && sudo ipfw pipe 1 config bw 300Kbit/s delay 200ms"
