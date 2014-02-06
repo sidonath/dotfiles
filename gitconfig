@@ -12,7 +12,6 @@
     color = true
 [alias]
     b = branch
-    ba = branch -a
     co = checkout
     ci = commit
     cp = cherry-pick
@@ -23,7 +22,6 @@
     rbs = rebase --skip
     st = status -sb
     ls = status -sb
-    #p = pull --rebase
     d = diff --patience --word-diff=color --ignore-space-change
     dc = diff --patience --word-diff=color --ignore-space-change --cached
     recent = for-each-ref --count=6 --sort=-committerdate refs/heads/ --format='%(refname)'
