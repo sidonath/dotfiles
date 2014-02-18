@@ -35,9 +35,18 @@ Vim plugins are added as submodules and are loaded with pathogen.
 * [ctrlp](https://github.com/kien/ctrlp.vim)
 * [TComment](https://github.com/tomtom/tcomment_vim)
 * [eunuch.vim](https://github.com/tpope/vim-eunuch)
+
+  Very handy if nothing else then for the `:Unlink` and `:W`
+
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 * [CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
+
+  Subword navigation with `,w`, `,e`, and `,b`.
+
 * [endwise.vim](https://github.com/tpope/vim-endwise)
+
+  Automatically insert `end`.
+
 * [surround.vim](https://github.com/tpope/vim-surround)
 * [Vim Tmux Navigator](https://github.com/christoomey/vim-tmux-navigator)
 * [fugitive.vim](https://github.com/tpope/vim-fugitive)
