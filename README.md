@@ -44,6 +44,10 @@ Vim plugins are added as submodules and are loaded with pathogen.
 
   `:Gblame` is awesome.
 
+* [matchit.vim](http://www.vim.org/scripts/script.php?script_id=39)
+
+  Use `%` to match Ruby blocks (e.g. `do`...`end`)
+
 Languages:
 
 * [CoffeeScript](https://github.com/kchmck/vim-coffee-script)
