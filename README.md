@@ -40,6 +40,9 @@ Vim plugins are added as submodules and are loaded with pathogen.
 * [endwise.vim](https://github.com/tpope/vim-endwise)
 * [surround.vim](https://github.com/tpope/vim-surround)
 * [Vim Tmux Navigator](https://github.com/christoomey/vim-tmux-navigator)
+* [fugitive.vim](https://github.com/tpope/vim-fugitive)
+
+  `:Gblame` is awesome.
 
 Languages:
 
