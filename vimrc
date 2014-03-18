@@ -18,6 +18,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+set smartcase         " CI search unless the term includes uppercase chars
+
 " Light solarized theme
 set background=light
 let g:solarized_termtrans = 1
