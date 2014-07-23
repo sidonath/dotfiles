@@ -55,3 +55,5 @@ set clipboard=unnamed
 
 " The following disables cursor keys, but now we have insta-Esc
 set timeout timeoutlen=3000 ttimeoutlen=100
+
+nnoremap Q <nop>
