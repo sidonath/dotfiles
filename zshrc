@@ -90,3 +90,9 @@ function zle-line-init zle-keymap-select {
 
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+# Go work environmnet
+export GOPATH=${HOME}/src/go/
+export PATH="$PATH:$GOPATH/bin"
+
+export MONO_GAC_PREFIX="/usr/local"
