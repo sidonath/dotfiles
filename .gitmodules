@@ -67,3 +67,6 @@
 [submodule "vim/bundle/tslime"]
 	path = vim/bundle/tslime
 	url = git@github.com:kikijump/tslime.vim.git
+[submodule "vim/bundle/niji"]
+	path = vim/bundle/niji
+	url = git@github.com:amdt/vim-niji.git
