@@ -70,3 +70,12 @@
 [submodule "vim/bundle/niji"]
 	path = vim/bundle/niji
 	url = git@github.com:amdt/vim-niji.git
+[submodule "vim/bundle/mustache-handlebars"]
+	path = vim/bundle/mustache-handlebars
+	url = git://github.com/mustache/vim-mustache-handlebars.git
+[submodule "vim/bundle/ember-script"]
+	path = vim/bundle/ember-script
+	url = https://github.com/vim-scripts/vim-ember-script
+[submodule "vim/bundle/emmet"]
+	path = vim/bundle/emmet
+	url = https://github.com/mattn/emmet-vim
