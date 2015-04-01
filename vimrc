@@ -13,7 +13,6 @@ set number            " Display line numbers
 set backspace=2       " Make backspace work like most other apps
 
 " Configure tab key
-set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
