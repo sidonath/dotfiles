@@ -95,6 +95,10 @@ zle -N zle-keymap-select
 export GOPATH=${HOME}/src/go/
 export PATH="$PATH:$GOPATH/bin"
 
+# Qt environment
+export QT_TT_BUILD_PATH=$(brew --prefix qt5)
+export PATH=$(brew --prefix qt5)/bin:$PATH
+
 export MONO_GAC_PREFIX="/usr/local"
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
