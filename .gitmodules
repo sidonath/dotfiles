@@ -82,3 +82,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/bundle/rubocop"]
+	path = vim/bundle/rubocop
+	url = git@github.com:ngmy/vim-rubocop.git
