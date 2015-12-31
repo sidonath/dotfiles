@@ -101,4 +101,6 @@ export PATH=$(brew --prefix qt5)/bin:$PATH
 
 export MONO_GAC_PREFIX="/usr/local"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home
+
+[ -s "/Users/damir/.dnx/dnvm/dnvm.sh" ] && . "/Users/damir/.dnx/dnvm/dnvm.sh" # Load dnvm
