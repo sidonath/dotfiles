@@ -1,46 +1,54 @@
 [core]
   editor = vim
-	excludesfile = /Users/damir/.gitignore
+  excludesfile = /Users/damir/.gitignore
 [http]
-    sslKey = /Users/damir/.ssh/github
+  sslKey = /Users/damir/.ssh/github
 [user]
-	name = Damir Zekic
-    email = damirz@gmail.com
+  name = Damir Zekic
+  email = damirz@gmail.com
 [apply]
-    whitespace = nowarn
+  whitespace = nowarn
 [status]
-    color = true
+  color = true
 [alias]
-    b = branch
-    co = checkout
-    ci = commit
-    cp = cherry-pick
-    rb = rebase
-    rba = rebase --abort
-    rbc = rebase --continue
-    rbi = rebase -i
-    rbs = rebase --skip
-    st = status -sb
-    ls = status -sb
-    d = diff --patience --word-diff=color --ignore-space-change
-    dc = diff --patience --word-diff=color --ignore-space-change --cached
-    recent = for-each-ref --count=6 --sort=-committerdate refs/heads/ --format='%(refname)'
+  b = branch
+  co = checkout
+  ci = commit
+  cp = cherry-pick
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbi = rebase -i
+  rbs = rebase --skip
+  st = status -sb
+  d = diff --patience --word-diff=color --ignore-space-change
+  dc = diff --patience --word-diff=color --ignore-space-change --cached
+  recent = for-each-ref --count=6 --sort=-committerdate refs/heads/ --format='%(refname)'
+  ls = ls-tree --full-tree --name-only -r HEAD
 
-    r = reset
-    r1 = reset HEAD^
-    r2 = reset HEAD^^
-    rh = reset --hard
-    rh1 = reset HEAD^ --hard
-    rh2 = reset HEAD^^ --hard
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
 
-    ours = "!f() { git co --ours $@ && git add $@; }; f"
-    theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+  ours = "!f() { git co --ours $@ && git add $@; }; f"
+  theirs = "!f() { git co --theirs $@ && git add $@; }; f"
 
 [color]
-    ui = true
+  ui = true
 [svn]
-    rmdir = true
+  rmdir = true
 [heroku]
-	account = personal
+  account = personal
 [push]
-	default = simple
+  default = simple
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
