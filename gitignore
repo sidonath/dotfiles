@@ -1,5 +1,8 @@
 .DS_Store
-*.swp
-*.swn
-*.swm
+*.sw?
+*.sv?
+*.su?
+*.st?
+*.ss?
+*.sr?
 /tags
