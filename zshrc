@@ -120,3 +120,7 @@ alias unhitch='hitch -u'
 
 # dev env-specific
 export TOPTAL_CHECK_ELASTICSEARCH_TEST_NODE=start
+
+# NVM settings
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
