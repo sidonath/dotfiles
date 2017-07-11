@@ -29,7 +29,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rbenv alert smc gup)
+plugins=(git alert smc gup)
 
 # WARNING: this overwrites standard commands like ls
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
@@ -51,7 +51,7 @@ alias enslower="sudo ipfw add pipe 1 all from any to localhost && sudo ipfw pipe
 alias enfasten="sudo ipfw flush"
 
 BREW_PATH=/usr/local/bin:/usr/local/sbin
-PATH=./bin:$HOME/bin:$BREW_PATH:$PATH:/usr/local/mysql/bin
+PATH=$BREW_PATH:$PATH:/usr/local/mysql/bin
 
 DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 export EDITOR=vim
@@ -104,3 +104,7 @@ export MONO_GAC_PREFIX="/usr/local"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home
 
 [ -s "/Users/damir/.dnx/dnvm/dnvm.sh" ] && . "/Users/damir/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+# Load rbenv
+eval "$(rbenv init -)"
+PATH=$HOME/bin:$PATH
