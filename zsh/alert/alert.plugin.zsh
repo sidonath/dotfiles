@@ -1,7 +1,7 @@
 function alert {
 	if (( $? == 0 )) then
-		say -v trinoids 'successfully done'
+		say -v Karen 'successfully done'
 	else
-		say -v bad 'failed'
+		say -v Fred 'failed'
 	fi
 }
