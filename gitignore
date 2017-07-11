@@ -6,3 +6,5 @@
 *.ss?
 *.sr?
 /tags
+stellar.yaml
+.hunspell
