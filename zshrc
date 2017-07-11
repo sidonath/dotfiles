@@ -109,3 +109,5 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home
 # Load rbenv
 eval "$(rbenv init -)"
 PATH=$HOME/bin:$PATH
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
