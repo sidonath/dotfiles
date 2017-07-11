@@ -4,7 +4,7 @@
 [http]
   sslKey = /Users/damir/.ssh/github
 [user]
-  name = Damir Zekic
+  name = Damir Zekić
   email = damirz@gmail.com
 [apply]
   whitespace = nowarn
