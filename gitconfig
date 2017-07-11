@@ -55,3 +55,5 @@
   required = true
 [pull]
   rebase = preserve
+[diff]
+  compactionHeuristic = true
