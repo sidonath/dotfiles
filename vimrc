@@ -56,3 +56,7 @@ set clipboard=unnamed
 set timeout timeoutlen=3000 ttimeoutlen=100
 
 nnoremap Q <nop>
+
+set rtp+=/usr/local/opt/fzf
+
+nnoremap <C-p> :FZF<cr>
