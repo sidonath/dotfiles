@@ -39,8 +39,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 alias ports="sudo lsof -Pi | grep LISTEN | sed -E 's/ +/,/g' | cut -d ',' -f 1,2,3,9 | column -s',' -t"
-alias fs="foreman start"
-alias fr="foreman run"
 #alias zeus="~/.rbenv/shims/foreman run zeus"
 alias gff="git flow feature"
 alias gfh="git flow hotfix"
@@ -124,3 +122,5 @@ export TOPTAL_CHECK_ELASTICSEARCH_TEST_NODE=start
 # NVM settings
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+
+alias fs="tmux new-window \"grep --invert-match '#' < Procfile.dev | sed -e 's/^[^:]*: //' | xargs -I {} tmux split-window -h \; send-keys '{}' 'C-m' && tmux select-pane -t 1 \; select-layout even-horizontal\""
