@@ -60,3 +60,4 @@ nnoremap Q <nop>
 set rtp+=/usr/local/opt/fzf
 
 nnoremap <C-p> :FZF<cr>
+call camelcasemotion#CreateMotionMappings('<leader>')
