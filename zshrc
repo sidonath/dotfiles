@@ -127,3 +127,7 @@ alias fs="tmux new-window \"grep --invert-match '#' < Procfile.dev | sed -e 's/^
 
 # Globally disable correct prompts. Frakking freedom
 unsetopt correct_all
+
+# Use `fd` to teach FZF to respect .gitignore
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
