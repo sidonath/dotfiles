@@ -117,10 +117,6 @@ alias unhitch='hitch -u'
 # dev env-specific
 export TOPTAL_CHECK_ELASTICSEARCH_TEST_NODE=start
 
-# NVM settings
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 alias fs="tmux new-window \"grep --invert-match '#' < Procfile.dev | sed -e 's/^[^:]*: //' | xargs -I {} tmux split-window -h \; send-keys '{}' 'C-m' && tmux select-pane -t 1 \; select-layout even-horizontal\""
 
 # Globally disable correct prompts. Frakking freedom
