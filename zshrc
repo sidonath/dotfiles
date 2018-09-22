@@ -102,8 +102,6 @@ export MONO_GAC_PREFIX="/usr/local"
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home
 
-[ -s "/Users/damir/.dnx/dnvm/dnvm.sh" ] && . "/Users/damir/.dnx/dnvm/dnvm.sh" # Load dnvm
-
 # Load rbenv
 eval "$(rbenv init -)"
 PATH=$HOME/bin:$PATH
