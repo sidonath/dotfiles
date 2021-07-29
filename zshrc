@@ -29,7 +29,14 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git alert smc gup)
+plugins=(git alert smc gup vim-mode git-fzf)
+# plugins=(git alert smc gup git-fzf zsh-vi-mode)
+# ZVM_CURSOR_STYLE_ENABLED=false
+# ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+# zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
+# git-fzf binds ^g^(something) sequence, but vim-mode binds ^g making git-fzf bindings unusable
+bindkey -r '^g'
 
 # WARNING: this overwrites standard commands like ls
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
@@ -43,7 +50,7 @@ alias ports="sudo lsof -Pi | grep LISTEN | sed -E 's/ +/,/g' | cut -d ',' -f 1,2
 alias gff="git flow feature"
 alias gfh="git flow hotfix"
 alias gfr="git flow release"
-alias tardis="git rbi master"
+alias tardis="git rbi main --autosquash"
 
 alias enslower="sudo ipfw add pipe 1 all from any to localhost && sudo ipfw pipe 1 config bw 300Kbit/s delay 200ms"
 alias enfasten="sudo ipfw flush"
@@ -66,18 +73,13 @@ export PGDATA=/usr/local/var/postgres
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
-### Added by the Heroku Toolbelt
+## Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-### Use Zsh/ZLE in vi-mode
-bindkey -v
-bindkey '^R' history-incremental-pattern-search-backward
-bindkey '^N' menu-complete
-bindkey '^P' reverse-menu-complete
-export KEYTIMEOUT=1 # how long to wait after pressing modifier key (e.g. ESC)
 
 INSERT_MODE_PROMPT="%{$fg_bold[yellow]%}-- INSERT --%{$reset_color%}"
 RPS1=$INSERT_MODE_PROMPT
+# TOUCH_BAR_STATUS=\[$(~/.iterm2/it2setkeylabel set status "$(test -d .git && (git rev-parse --abbrev-ref HEAD) || (echo -n "Not a repo"))")\]
+# PS1=$PS1$TOUCH_BAR_STATUS
 
 ### Report ZLE/vi mode in prompt
 # http://dougblack.io/words/zsh-vi-mode.html
@@ -118,6 +120,8 @@ alias unhitch='hitch -u'
 export TOPTAL_CHECK_ELASTICSEARCH_TEST_NODE=start
 
 alias fs="tmux new-window \"grep --invert-match '#' < Procfile.dev | sed -e 's/^[^:]*: //' | xargs -I {} tmux split-window -h \; send-keys '{}' 'C-m' && tmux select-pane -t 1 \; select-layout even-horizontal\""
+alias deploy-monitor="tmux new-window 'watch heroku ps -r production'; tmux split-window -h; tmux split-window 'watch curl https://version:8f48ac45106c1a7bd8cd9b2ab6362b21@freedom.to/deployed_version'; tmux split-window -t0 -p40 'watch heroku releases -r production'; tmux select-pane -t2"
+alias dev-layout="tmux split-window; tmux split-window -h; tmux select-pane -t1; tmux select-pane -t0; vim"
 
 # Globally disable correct prompts. Frakking freedom
 unsetopt correct_all
@@ -125,3 +129,11 @@ unsetopt correct_all
 # Use `fd` to teach FZF to respect .gitignore
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# added by travis gem
+[ -f /Users/damir/.travis/travis.sh ] && source /Users/damir/.travis/travis.sh
+
+# Python3 bins
+export PATH=/usr/local/opt/python/libexec/bin:/Users/damir/Library/Python/3.8/bin:$PATH

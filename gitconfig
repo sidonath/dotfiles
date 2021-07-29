@@ -1,7 +1,7 @@
 [core]
   editor = vim
   excludesfile = /Users/damir/.gitignore
-  pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [http]
   sslKey = /Users/damir/.ssh/github
 [user]
