@@ -121,6 +121,8 @@ alias unhitch='hitch -u'
 export TOPTAL_CHECK_ELASTICSEARCH_TEST_NODE=start
 
 alias fs="tmux new-window \"grep --invert-match '#' < Procfile.dev | sed -e 's/^[^:]*: //' | xargs -I {} tmux split-window -h \; send-keys '{}' 'C-m' && tmux select-pane -t 1 \; select-layout even-horizontal\""
+alias deploy-monitor="tmux new-window 'watch heroku ps -r production'; tmux split-window -h; tmux split-window 'watch curl https://version:8f48ac45106c1a7bd8cd9b2ab6362b21@freedom.to/deployed_version'; tmux split-window -t0 -p40 'watch heroku releases -r production'; tmux select-pane -t2"
+alias dev-layout="tmux split-window; tmux split-window -h; tmux select-pane -t1; tmux select-pane -t0; vim"
 
 # Globally disable correct prompts. Frakking freedom
 unsetopt correct_all
