@@ -46,7 +46,7 @@ alias ports="sudo lsof -Pi | grep LISTEN | sed -E 's/ +/,/g' | cut -d ',' -f 1,2
 alias gff="git flow feature"
 alias gfh="git flow hotfix"
 alias gfr="git flow release"
-alias tardis="git rbi master"
+alias tardis="git rbi main --autosquash"
 
 alias enslower="sudo ipfw add pipe 1 all from any to localhost && sudo ipfw pipe 1 config bw 300Kbit/s delay 200ms"
 alias enfasten="sudo ipfw flush"
