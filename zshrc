@@ -29,7 +29,10 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git alert smc gup)
+plugins=(git alert smc gup vim-mode git-fzf)
+
+# git-fzf binds ^g^(something) sequence, but vim-mode binds ^g making git-fzf bindings unusable
+bindkey -r '^g'
 
 # WARNING: this overwrites standard commands like ls
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
@@ -125,3 +128,5 @@ unsetopt correct_all
 # Use `fd` to teach FZF to respect .gitignore
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
